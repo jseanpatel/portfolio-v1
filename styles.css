@@ -1,0 +1,74 @@
+.header {
+	overflow: hidden;
+	height: 75vh;
+	background-color: purple;
+}
+
+.footer {
+	height: 25vh;
+	background-color: gray;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.active {
+	font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 2px;
+	color: white;
+	border-color: white;
+}
+
+.links {
+	float: right;
+	margin-right: 2rem;
+	margin-top: 1.5rem;
+}
+
+a {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-weight: 100;
+	text-decoration: none;
+	color: white;
+}
+
+.topnav {
+	display: block;
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	width: 100%;
+}
+
+.content {
+	height: 25vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.project {
+	display: flex;
+	position: relative;
+	height: 25vh;
+	width: 100%;
+	background-color: magenta;
+}
+
+#flyright {
+	background-color: blue;
+}
+
+#foosball {
+	background-color: green;
+}
+
+#historybowl {
+	background-color: yellow;
+}
+

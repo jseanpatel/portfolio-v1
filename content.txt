@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>Jacob Patel</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<nav class="topnav">
+		<a class="active" href="#home">Home</a>
+		<a href="#projects">Projects</a>
+		<a href="#activies">Activities</a>
+		<a href="#about">About</a>
+	</nav>
+	<h1 class="title"> Jacob Patel: iOS Developer </h1>
+	<h1 id="home">Home</h1>
+	<div>
+		<h1 id="projects">Projects</h1>
+		<u><h2> FlyRight - Space Adventure </h2></u>
+		<i>FlyRight - Space Adventure is an iOS app I created to learn the ropes of Swift. In this game, the player must navigate a badly damaged ship through an asteroid field by only turning right.</i>
+		<br>
+		<b> Check it out on Github.</b>
+		<a href="https://github.com/jacobseanpatel/FlyRight">
+			<img src="FlyRightGithub.png" alt="HTML tutorial" style="width:60px;height:60px;border:0;">
+		</a>
+	</div>
+	<div>
+		<u><h2> Foosball </h2></u>
+		<i> Foosball was my submission for WWDC 2018. It is a representation of the world famous game by the same name, and was written entirely in Swift Playgrounds. </i>
+		<br>
+		<b> Take a look on Github.</b>
+		<a href="https://github.com/jacobseanpatel/Foosball">
+			<img src="https://placeholder.com/60x60" alt="HTML tutorial" style="width:60px;height:60px;border:0;">
+		</a>
+	</div>
+	<div>
+		<h1 id="activies">Activities</h1>
+		<u><h2> Redding United History Bowl League </h2></u>
+		<i> The Redding United History Bowl League is a newly founded extension of the National History Bee and Bowl competition to specifically serve Northern California. The League's inaugural season during the 2018-2019 school year will showcase multiple Norcal teams competing through the already popular National History Bee and Bowl. Participating High Schools teams will field both Varsity and Junior Varsity teams, similar to that of a sports team. </i>
+		<br>
+		<b> Check out the league website: ruhbl.com</b>
+		<br>
+		<b> Take a look at the national competition: http://www.historybowl.com </b>
+	</div>
+	<div>
+		<h3> History Bowl </h3>
+		<p> History Bowl is specifically the team competition which comprimises two teams of four students utilizing historical thinking and analytical skills to compete. </p>
+	</div>
+	<div>
+		<h3> History Bee </h3>
+		<p> History Bee is the individual competition that incorporates high school students competiting in a single student round robin format.</p>
+	</div>
+	<div>
+		<h1 id="about">About</h1>
+		<u><h2> Who am I? </h2></u>
+	</div>
+	<p> My name is Jacob Patel. I am a young, high-school developer who is interested in the world of Computer Science. Additionally, I greatly enjoy History, and aim to intertwine these two interest whenever I can.</p>
+</body>
+</html>
