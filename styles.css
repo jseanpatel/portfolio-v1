@@ -2,6 +2,7 @@
 	overflow: hidden;
 	height: 75vh;
 	background-color: purple;
+	position: relative;
 }
 
 .footer {
@@ -12,7 +13,23 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: pinkblue;
+}
+
+.title {
+
+}
+
+#titleName {
+	word-wrap: break-word;
+	text-allign: center;
+	font-size: 10rem;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }                  
 }
 
 .active {
@@ -72,3 +89,7 @@ a {
 	background-color: yellow;
 }
 
+@font-face {
+	font-family: pinkblueimport;
+	src: url(assets/pinkblue.ttf);
+}
