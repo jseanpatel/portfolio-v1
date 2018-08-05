@@ -3,37 +3,71 @@
 	height: 75vh;
 	background-color: purple;
 	position: relative;
+	font-family: "pinkblue";
+	display: block;
 }
 
 .footer {
 	height: 25vh;
-	background-color: gray;
+	background-color: purple;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: pinkblue;
+	font-family: "pinkblue";
 }
 
 .title {
 
 }
 
+.keyClub {
+	background-color: #003366;
+}
+
+.hourTrack {
+
+}
+
+@media only screen and (max-width: 450px) {
+	#sum {
+		font-family: Georgia;
+		font-size: 5rem;
+		text-align: center
+	}
+}
+
 #titleName {
+	opacity: 0.25;
 	word-wrap: break-word;
-	text-allign: center;
-	font-size: 10rem;
+	font-size: 8rem;
 	margin: 0;
-    position: absolute;
-    top: 50%;
+	position: absolute;
+	transform: rotate(-90deg);
+    transform-origin: 100% 0;
+	top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }                  
+    transform: translate(-50%, -50%)
+}
+
+.fa-caret-down {
+	opacity: 0.25;
+	font-size: 5rem;
+	word-wrap: break-word;
+	margin: 0;
+	position: absolute;
+	transform: rotate(-90deg);
+    transform-origin: 100% 0;
+	top: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .active {
-	font-size: 1rem;
+	font-size: 1.25rem;
     margin-bottom: 0.5rem;
     border-bottom: 2px solid #000;
     display: inline-block;
@@ -46,9 +80,10 @@ body {
 	float: right;
 	margin-right: 2rem;
 	margin-top: 1.5rem;
+	font-size: 1.0rem;
 }
 
-a {
+.links a {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	font-weight: 100;
@@ -67,6 +102,7 @@ a {
 	height: 25vh;
 	display: flex;
 	flex-direction: row;
+	background-color: purple;
 }
 
 .project {
@@ -75,18 +111,28 @@ a {
 	height: 25vh;
 	width: 100%;
 	background-color: magenta;
+	overflow: auto;
 }
 
 #flyright {
 	background-color: blue;
+	max-width: 33.33%
+	margin-left: 0rem;
+	margin-right: 0rem;
 }
 
 #foosball {
 	background-color: green;
+	max-width: 33.33%
+	margin-left: 0rem;
+	margin-right: 0rem;
 }
 
 #historybowl {
 	background-color: yellow;
+	max-width: 33.33%;
+	margin-left: 0rem;
+	margin-right: 0rem;
 }
 
 @font-face {

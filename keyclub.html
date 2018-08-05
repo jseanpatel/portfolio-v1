@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Jacob Patel </title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body class="keyClub">
+	<div> 
+		<p id="sum">  </p>
+	</div>
+	<script>
+
+		function setSumLabel(sum) {
+			var label = document.getElementById("sum");
+			label.innerHTML = sum;
+		}
+
+		function parseVal(response) {
+			var json = JSON.parse(response);
+			var sum = json.values[0][0];
+			setSumLabel(sum);
+		}
+
+		function httpGET(callback) {
+			var url = "https://sheets.googleapis.com/v4/spreadsheets/1lR3TXLsoCqxjBeWBlctVoj6zqZ5_aLy1HFMl-IoqWYg/values/MemberVolunteerHours\!D104?key=AIzaSyDZCQp8YIPpblHl9Omb2qQbpKWs9fgQ4og";
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function() { 
+				if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+					callback(xmlHttp.responseText);
+				}
+			}
+		    xmlHttp.open("GET", url, true); // true for asynchronous 
+		    xmlHttp.send(null);
+		}
+
+		window.onload = httpGET(parseVal);
+	</script>
+</body>
+</html>
