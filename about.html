@@ -1,25 +1,59 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title> Jacob Patel </title>
-		<link rel="stylesheet" type="text/css" href="styles.css"> 
-	</head>
-	<body>
-		<div class="header">
-			<nav class="topnav">
-				<div class="links">
+<head>
+	<meta charset="utf-8">
+	<title> Jacob Patel </title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="landing">
+		<nav class="topnav">
+			<div class="links">
 				<a href="index.html">Home</a>
-				<a href="#projects">Projects</a>
+				<a href="index.html#projects">Projects</a>
 				<a class="active" href="about.html">About</a>
-				</div>
-			</nav>
-			<div class="landing">
-				
+			</div>
+		</nav>
+		<div id="titleName"> About Me </div>
+		<i class="fas fa-caret-down"> </i>
+	</div>
+	<div class="content">
+		<div id="aboutPanel">
+			<div class="descriptionBox">
+				<p> My name is Jacob Patel. I am a young, high-school developer who is interested in the world of Computer Science. Additionally, I greatly enjoy History, and aim to intertwine these two interests whenever I can.</p>
+			</div>
+			<div class="descriptionBox">
+				<p> Find me on Github: <a href="https://github.com/jacobseanpatel"> <i class="fab fa-github"> </i> </a> </p>
+			</div>
+			<div class="descriptionBox">
+				<p> Check out my resume: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-file"></i> </a> 
+			</div>
+			<div class="descriptionBox">
+				<p> Listen to a song: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-music"></i> </a>
+			</div>
+			<div class="descriptionBox">
+				<p id="dropMessage"> Drop me a message: </p>
+				<form action="/my-handling-form-page" method="post">
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="user_name">
+					</div>
+					<div>
+						<label for="mail">E-mail:</label>
+						<input type="email" id="mail" name="user_mail">
+					</div>
+					<div>
+						<label for="msg">Message:</label>
+						<textarea id="msg" name="user_message"></textarea>
+					</div>
+					<div class="button">
+  						<button type="submit">Send your message</button>
+					</div>
+				</form>
 			</div>
 		</div>
-		<div class="content">
-			
-		</div>
+		<div class="footer">
+		</div>		
 	</body>
-</html>
+	</html>

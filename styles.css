@@ -1,7 +1,7 @@
-.header {
+.landing {
 	overflow: hidden;
 	height: 75vh;
-	background-color: purple;
+	background-color: #66d0e7;
 	position: relative;
 	font-family: "pinkblue";
 	display: block;
@@ -9,7 +9,7 @@
 
 .footer {
 	height: 25vh;
-	background-color: purple;
+	background-color: #66d0e7;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 .title {
 
 }
+
 
 .keyClub {
 	background-color: #003366;
@@ -40,30 +41,59 @@ body {
 
 #titleName {
 	opacity: 0.25;
-	word-wrap: break-word;
 	font-size: 8rem;
-	margin: 0;
+ 
+	text-align: center;
+	margin-top: 25%;
+}
+
+#silhouette {
 	position: absolute;
-	transform: rotate(-90deg);
-    transform-origin: 100% 0;
-	top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 35%;
+	width: 250px;
+	height: 250px;
+	opacity: 0.6
 }
 
 .fa-caret-down {
 	opacity: 0.25;
 	font-size: 5rem;
-	word-wrap: break-word;
-	margin: 0;
+	bottom: 1rem;
 	position: absolute;
-	transform: rotate(-90deg);
-    transform-origin: 100% 0;
-	top: 85%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 50px;
+}
+
+.descriptionBox {
+	border-radius: 20px;
+	margin: 10%;
+	background-color: #fbf5d7;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	height: auto;
+}
+
+#aboutPanel {
+	position: relative;
+	width: 100%;
+	background-color: #fdeab7;
+	max-width: 100%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+}
+
+.descriptionBox p {
+	margin: 4%;
+	flex: none;
+	height: auto;
+	padding: 3%;
+	font-size: 1.5rem;
 }
 
 .active {
@@ -94,12 +124,15 @@ body {
 .topnav {
 	display: block;
 	position: fixed;
-	top: 0; left: 0; right: 0;
+	top: 0; 
+	left: 0; 
+	right: 0;
 	width: 100%;
 }
 
 .content {
-	height: 25vh;
+	text-align: center;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	background-color: purple;
@@ -109,33 +142,111 @@ body {
 	display: flex;
 	position: relative;
 	height: 25vh;
-	width: 100%;
+	width: 33.33%;
 	background-color: magenta;
 	overflow: auto;
+	min-width: 33.33%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+}
+
+.fas, .fab {
+	font-size: 1.8rem;
+	padding-left: 2%;
+	color: black;
+}
+
+#dropMessage {
+	margin-bottom: -1.5rem;
+	padding-top: 1rem;
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 300px;
+  /* To see the outline of the form */
+  padding: 1em;
+  text-align: left;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  font-family: "pinkblue";
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 #flyright {
-	background-color: blue;
-	max-width: 33.33%
-	margin-left: 0rem;
-	margin-right: 0rem;
-}
-
-#foosball {
-	background-color: green;
-	max-width: 33.33%
-	margin-left: 0rem;
-	margin-right: 0rem;
+	background-color: #afe1e3 
 }
 
 #historybowl {
-	background-color: yellow;
-	max-width: 33.33%;
-	margin-left: 0rem;
-	margin-right: 0rem;
+	background-color: #4c9cb8;
+}
+
+#foosball {
+	background-color: #afe1e3 
+}
+
+#project4 {
+	background-color: #4c9cb8;
+}
+
+#project5 {
+	background-color: #afe1e3 
+}
+
+#project6 {
+	background-color: #4c9cb8;
 }
 
 @font-face {
-	font-family: pinkblueimport;
+	font-family: "pinkblue";
 	src: url(assets/pinkblue.ttf);
 }
