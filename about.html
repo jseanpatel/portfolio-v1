@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
-<body>
+<body onload="play()">
 	<div class="landing">
 		<nav class="topnav">
 			<div class="links">
@@ -15,7 +15,7 @@
 				<a class="active" href="about.html">About</a>
 			</div>
 		</nav>
-		<div id="titleName"> About Me </div>
+		<div id="titleName"> About </div>
 		<i class="fas fa-caret-down"> </i>
 	</div>
 	<div class="content">
@@ -27,14 +27,16 @@
 				<p> Find me on Github: <a href="https://github.com/jacobseanpatel"> <i class="fab fa-github"> </i> </a> </p>
 			</div>
 			<div class="descriptionBox">
-				<p> Check out my resume: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-file"></i> </a> 
+				<p> Get my resume: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-file"></i> </a> 
 			</div>
 			<div class="descriptionBox">
-				<p> Listen to a song: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-music"></i> </a>
+				<div onclick="play()">
+					<p> Listen to a song: <i class="fas fa-music"> </i> </p>
+				</div>
 			</div>
 			<div class="descriptionBox">
 				<p id="dropMessage"> Drop me a message: </p>
-				<form action="/my-handling-form-page" method="post">
+				<form action="https://formspree.io/jseanpatel@gmail.com" method="post">
 					<div>
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="user_name">
@@ -48,12 +50,33 @@
 						<textarea id="msg" name="user_message"></textarea>
 					</div>
 					<div class="button">
-  						<button type="submit">Send your message</button>
+						<button type="submit">Send your message</button>
 					</div>
 				</form>
 			</div>
 		</div>
-		<div class="footer">
-		</div>		
-	</body>
-	</html>
+	</div>
+	<div class="footer">
+	</div>	
+	<script>
+
+		function play() {
+
+   			var a = Math.random()*2;
+    		a=Math.floor(a);
+
+    		if(a==1)
+    	{
+      		 alert(a); 
+        	document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='1.mp3' type='audio/ogg'>Your browser does not support the audio element.</audio>";
+    	}
+    		if(a==0)
+    	{	
+       		alert(document.getElementById('soundtrack'))
+        	document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='0.mp3' type='audio/ogg'>Your browser does not support the audio element.</audio>";
+    	}
+	}
+}
+	</script>	
+</body>
+</html>
