@@ -13,6 +13,10 @@
 	background-color: #66d0e7;
 }
 
+.keyTitle {
+
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -136,6 +140,12 @@ body {
 	width: 100%;
 }
 
+iframe {
+	position: relative;
+	border-radius: 20px;
+	margin: 4%;
+}
+
 .content {
 	text-align: center;
 	height: auto;
@@ -156,6 +166,17 @@ body {
 	margin-right: 0rem;
 }
 
+.hoverproject {
+	display: flex;
+	position: relative;
+	height: 25vh;
+	width: 100%;
+	background-color: transparent;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	transition: all .3s ease-in-out;
+}
+
 .fas, .fab {
 	font-size: 1.8rem;
 	padding-left: 2.5%;
@@ -167,6 +188,11 @@ body {
 	height: 100px;
 	margin: auto;
 	border-radius: 20px;
+}
+
+.hoverproject:hover {
+	transform: scale(1.15);
+	opacity: 0.85;
 }
 
 #dropMessage {
@@ -198,6 +224,8 @@ input, textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
   font: 1em sans-serif;
+
+  font-family: "pinkblue";
 
   /* To give the same size to all text fields */
   width: 300px;

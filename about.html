@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
-<body onload="play()">
+<body>
 	<div class="landing">
 		<nav class="topnav">
 			<div class="links">
@@ -30,8 +30,10 @@
 				<p> Get my resume: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-file"></i> </a> 
 			</div>
 			<div class="descriptionBox">
-				<div onclick="play()">
+				<div>
 					<p> Listen to a song: <i class="fas fa-music"> </i> </p>
+					<iframe src="https://open.spotify.com/embed?uri=spotify:user:jseanpatel:playlist:4JC7XXtbAFPRML7MS2YkeT" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+					</iframe>
 				</div>
 			</div>
 			<div class="descriptionBox">
@@ -54,29 +56,8 @@
 					</div>
 				</form>
 			</div>
+
 		</div>
-	</div>
-	<div class="footer">
-	</div>	
-	<script>
-
-		function play() {
-
-   			var a = Math.random()*2;
-    		a=Math.floor(a);
-
-    		if(a==1)
-    	{
-      		 alert(a); 
-        	document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='1.mp3' type='audio/ogg'>Your browser does not support the audio element.</audio>";
-    	}
-    		if(a==0)
-    	{	
-       		alert(document.getElementById('soundtrack'))
-        	document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='0.mp3' type='audio/ogg'>Your browser does not support the audio element.</audio>";
-    	}
-	}
-}
-	</script>	
+	</div>		
 </body>
 </html>
