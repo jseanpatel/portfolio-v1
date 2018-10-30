@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-*Website for personal, developer portfolio.* 
+*Website for my personal developer portfolio.* 
 
 ## Table of Contents
 - [Description](#description)
@@ -10,16 +10,16 @@
 
 ## Description
 
-This website was built to house personal projects, information, and interests.
+This website was built to house my personal projects, information, and interests.
 
 ## Technologies
 
-- Fontawesome.com
-- *Pink Blue Font* dafont.com
+* [Bulma](https://bulma.io)
+* [Font Awesome 5](https://fontawesome.com)
 
 ## Deployment
 
-This website can be reached at jseanpatel.github.io.
+This website is static and can be deployed by simply opening index.html. This website can be reached at [jseanpatel.github.io](https://jseanpatel.github.io).
 
 ## License
 
