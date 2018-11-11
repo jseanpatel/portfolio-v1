@@ -1,9 +1,9 @@
 .landing {
 	overflow: hidden;
-	height: 75vh;
+	height: 90vh;
 	background-color: #66d0e7;
 	position: relative;
-	font-family: "pinkblue";
+	font-family: "righteous";
 	display: block;
 	font-size: 90%;
 }
@@ -20,7 +20,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "pinkblue";
+	font-family: "";
 }
 
 .title {
@@ -75,8 +75,6 @@ body {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 0;
-	right: 0;
 	text-align: center;
 }
 
@@ -120,7 +118,7 @@ body {
 	float: right;
 	margin-right: 2rem;
 	margin-top: 1.5rem;
-	font-size: 1.0rem;
+	font-size: 1.15rem;
 }
 
 .links a {
@@ -160,7 +158,7 @@ iframe {
 	height: 25vh;
 	width: 33.33%;
 	background-color: magenta;
-	overflow: auto;
+	overflow: hidden;
 	min-width: 33.33%;
 	margin-left: 0rem;
 	margin-right: 0rem;
@@ -225,7 +223,7 @@ input, textarea {
      By default, textareas have a monospace font */
   font: 1em sans-serif;
 
-  font-family: "pinkblue";
+  font-family: "righteous";
 
   /* To give the same size to all text fields */
   width: 300px;
@@ -258,21 +256,21 @@ button {
   left: 0;
   right: 0;
   display: block;
-  font-family: "pinkblue";
+  font-family: "righteous";
   font-size: 1rem;
   border-radius: 5px;
 }
 
 #flyright {
-	background-color: #afe1e3 
+	background-color: #C85000;
 }
 
 #historybowl {
-	background-color: #4c9cb8;
+	background-color: #262C2B;
 }
 
 #foosball {
-	background-color: #afe1e3 
+	background-color: #B3B1B6; 
 }
 
 #project4 {
@@ -288,6 +286,6 @@ button {
 }
 
 @font-face {
-	font-family: "pinkblue";
-	src: url(assets/pinkblue.ttf);
+	font-family: "righteous";
+	src: url(assets/righteous.ttf);
 }

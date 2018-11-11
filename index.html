@@ -15,9 +15,9 @@
 					<a href="about.html">About</a>
 				</div>
 			</nav>
-			<div id="titleName"> Jacob Patel </div>
-			<i class="fas fa-caret-down"> </i>
-			<!-- <img src="assets/silhouette.png" id="silhouette"> -->
+			<div>
+			<button type="button"> <i class="fas fa-caret-down"> </i></button>
+			</div>
 		</div>
 		<div class="content">	
 			<a href="projects/flyright.html" class="project" id="flyright">
@@ -49,5 +49,14 @@
 			</a>
 		</div>
 		-->	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script>
+
+	$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".content").offset().top},
+        'slow');
+	});
+	</script>
 	</body>
 </html>

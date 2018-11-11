@@ -15,8 +15,10 @@
 				<a class="active" href="about.html">About</a>
 			</div>
 		</nav>
-		<div id="titleName"> About </div>
-		<i class="fas fa-caret-down"> </i>
+		<div id="titleName"> </div>
+		<div>
+			<button type="button"> <i class="fas fa-caret-down"> </i></button>
+		</div>
 	</div>
 	<div class="content">
 		<div id="aboutPanel">
@@ -24,14 +26,11 @@
 				<p> My name is Jacob Patel. I am a young, high-school developer who is interested in the world of Computer Science. Additionally, I greatly enjoy History, and aim to intertwine these two interests whenever I can.</p>
 			</div>
 			<div class="descriptionBox">
-				<p> Find me on Github: <a href="https://github.com/jacobseanpatel"> <i class="fab fa-github"> </i> </a> </p>
+				<p> Find me on Github: <a href="https://github.com/jseanpatel"> <i class="fab fa-github"> </i> </a> </p>
 			</div>
 			<div class="descriptionBox">
-				<p> Check out my resume: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-file"></i> </a> 
+				<p> Check out my resume: <a href="assets/resume.pdf"> <i class="fas fa-file"></i> </a> 
 				</div>
-				<div class="descriptionBox">
-					<p> Listen to a song: <a href="https://github.com/jacobseanpatel"> <i class="fas fa-music"></i> </a>
-					</div>
 					<div class="descriptionBox">
 						<p id="dropMessage"> Drop me a message: </p>
 						<form action="https://formspree.io/jseanpatel@gmail.com" method="post">
@@ -52,7 +51,6 @@
 							</div>		
 					</body>
 					</html>
-				<p> Get my resume: <a href="https://github.com/jseanpatel"> <i class="fas fa-file"></i> </a> 
 			</div>
 			<div class="descriptionBox">
 				<div>
@@ -61,28 +59,15 @@
 					</iframe>
 				</div>
 			</div>
-			<div class="descriptionBox">
-				<p id="dropMessage"> Drop me a message: </p>
-				<form action="https://formspree.io/jseanpatel@gmail.com" method="post">
-					<div>
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="user_name">
-					</div>
-					<div>
-						<label for="mail">E-mail:</label>
-						<input type="email" id="mail" name="user_mail">
-					</div>
-					<div>
-						<label for="msg">Message:</label>
-						<textarea id="msg" name="user_message"></textarea>
-					</div>
-					<div class="button">
-						<button type="submit">Send your message</button>
-					</div>
-				</form>
-			</div>
-
 		</div>
-	</div>		
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>		
+	<script>
+		$("button").click(function() {
+		$('html,body').animate({
+			scrollTop: $(".content").offset().top},
+			'slow');
+		});
+		</script>
 </body>
 </html>
