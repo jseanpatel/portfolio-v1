@@ -1,107 +1,42 @@
+/* styles for portfolio */
+/* TODO: split this file into base styles and index.html styles so I can reuse base styles on other pages and reduce load */
+
+@font-face {
+	font-family: "pinkblue";
+	src: url(assets/pinkblue.ttf);
+}
+
+@font-face {
+	font-family: "righteous";
+	src: url(assets/righteous.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "righteous" !important;
+}
+
 .landing {
 	overflow: hidden;
 	height: 90vh;
 	background-color: #66d0e7;
 	position: relative;
 	font-family: "righteous";
-	display: block;
 	font-size: 90%;
 }
 
-.footer {
-	height: 25vh;
-	background-color: #66d0e7;
-}
+/* nav styles */
+/* TODO: redo this in Bulma styling */
 
-.keyTitle {
-
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "";
-}
-
-.title {
-
-}
-
-
-.keyClub {
-	background-color: #003366;
-}
-
-.hourTrack {
-
-}
-
-@media only screen and (min-width: 1000px) {
-	#sum {
-		font-family: Georgia;
-		font-size: 5rem;
-		text-align: center
-	}
-}
-
-@media only screen and (min-width: 1000px) {
-	#titleName {
-		font-size: 400%;
-	}
-}
-
-#titleName {
-	opacity: 0.25;
-	text-align: center;
-	margin-top: 25%;
-	font-size: 7rem;
-}
-
-#silhouette {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
+.topnav {
+	display: block;
+	position: fixed;
+	top: 0; 
+	left: 0; 
 	right: 0;
-	top: 35%;
-	width: 250px;
-	height: 250px;
-	opacity: 0.6
-}
-
-.fa-caret-down {
-	opacity: 0.25;
-	bottom: 1rem;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.descriptionBox {
-	border-radius: 20px;
-	margin: 10%;
-	background-color: #fbf5d7;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	height: auto;
-}
-
-#aboutPanel {
-	position: relative;
 	width: 100%;
-	background-color: #fdeab7;
-	max-width: 100%;
-	margin-left: 0rem;
-	margin-right: 0rem;
-}
-
-.descriptionBox p {
-	margin: 4%;
-	flex: none;
-	height: auto;
-	padding: 3%;
-	font-size: 1.5rem;
-
+	z-index: 2;
 }
 
 .active {
@@ -129,56 +64,36 @@ body {
 	color: white;
 }
 
-.topnav {
-	display: block;
-	position: fixed;
-	top: 0; 
-	left: 0; 
-	right: 0;
-	width: 100%;
+/* index styles */
+
+@media only screen and (min-width: 1000px) {
+	#titleName {
+		font-size: 400%;
+	}
 }
 
-iframe {
-	position: relative;
-	border-radius: 20px;
-	margin: 4%;
+#titleName {
+	opacity: 0.25;
+	font-size: 7rem;
+	font-family: "pinkblue";
 }
 
-.content {
+#titleColumns {
+	height: 75vh;
+}
+
+.projects {
 	text-align: center;
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	background-color: purple;
 }
 
 .project {
 	display: flex;
 	position: relative;
 	height: 25vh;
-	width: 33.33%;
-	background-color: magenta;
-	overflow: hidden;
-	min-width: 33.33%;
-	margin-left: 0rem;
-	margin-right: 0rem;
-}
-
-.hoverproject {
-	display: flex;
-	position: relative;
-	height: 25vh;
-	width: 100%;
-	background-color: transparent;
-	margin-left: 0rem;
-	margin-right: 0rem;
-	transition: all .3s ease-in-out;
-}
-
-.fas, .fab {
-	font-size: 1.8rem;
-	padding-left: 2.5%;
-	color: black;
+	width: 33.33%;	
 }
 
 .projectpicture {
@@ -188,77 +103,15 @@ iframe {
 	border-radius: 20px;
 }
 
+.hoverproject {
+	display: flex;
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+
 .hoverproject:hover {
 	transform: scale(1.15);
 	opacity: 0.85;
-}
-
-#dropMessage {
-	margin-bottom: -1.5rem;
-	padding-top: 1rem;
-}
-
-form {
-  /* Just to center the form on the page */
-  margin: 0 auto;
-  width: 300px;
-  /* To see the outline of the form */
-  padding: 1em;
-  text-align: left;
-}
-
-form div + div {
-  margin-top: 1em;
-}
-
-label {
-  /* To make sure that all labels have the same size and are properly aligned */
-  display: inline-block;
-  width: 90px;
-  text-align: left;
-}
-
-input, textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  font-family: "righteous";
-
-  /* To give the same size to all text fields */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* To harmonize the look & feel of text field border */
-  border: 1px solid #999;
-  border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-  /* To give a little highlight on active elements */
-  border-color: #000;
-}
-
-textarea {
-  /* To properly align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* To give enough room to type some text */
-  height: 5em;
-}
-
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  display: block;
-  font-family: "righteous";
-  font-size: 1rem;
-  border-radius: 5px;
 }
 
 #flyright {
@@ -285,7 +138,24 @@ button {
 	background-color: #4c9cb8;
 }
 
-@font-face {
-	font-family: "righteous";
-	src: url(assets/righteous.ttf);
+.footer {
+	height: 25vh;
+	background-color: #66d0e7;
+}
+
+/* project page and about page styles */
+/* moved all the old styles to content.txt, need to redo pages in Bulma style */
+
+.about_info {
+	background-color: #fdeab7;
+}
+
+/* key club hidden page styles */
+
+@media only screen and (min-width: 1000px) {
+	#sum {
+		font-family: Georgia;
+		font-size: 5rem;
+		text-align: center
+	}
 }
