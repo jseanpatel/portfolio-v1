@@ -15,23 +15,37 @@
 					<a href="../about.html">About</a>
 				</div>
 			</nav>
-			<div id="titleName"> FlyRight </div>
-			<i class="fas fa-caret-down"> </i>
-		</div>
-		<div class="content">
-			<div id="aboutPanel">
-			<div class="descriptionBox">
-				<p> FlyRight - Space Adventure is an iOS app I created to learn the ropes of Swift. In this game, the player must navigate a badly damaged ship through an asteroid field by only turning right. </p>
+			<div id="titleName">  </div>
+			<div>
+				<button type="button"> <i class="fas fa-caret-down"> </i></button>
 			</div>
-			<div class="descriptionBox">
-				<div>
-					<p> Get it on the Appstore: <a href="https://itunes.apple.com/us/app/flyright-space-adventure/id1412455323?mt=8&ign-mpt=uo%3D4"> <i class="fab fa-apple"></i> </a> 
+		</div>
+		<section class="section project_info">
+			<div class="container">
+				<div class="columns">
+					<div class="column has-text-centered is-half is-offset-one-quarter">
+						<div class="content flyRightPanel">
+							<div class="card notification descriptionBox">
+								<p> FlyRight - Space Adventure is an iOS app I created to learn the ropes of Swift. In this game, the player must navigate a badly damaged ship through an asteroid field by only turning right. </p>
+							</div>
+							<div class="card notification descriptionBox">
+								<p> Find me on GitHub: <a href="https://github.com/jseanpatel"> <i class="fab fa-github"> </i> </a> </p>
+							</div>
+							<div class="card notification descriptionBox">
+								<p> Check it out on GitHub: <a href="https://github.com/jacobseanpatel/FlyRight"> <i class="fab fa-github"></i> </a> 
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="descriptionBox">
-				<p> Check it out on GitHub: <a href="https://github.com/jacobseanpatel/FlyRight"> <i class="fab fa-github"></i> </a> 
-			</div>
-			</div>
-		</div>		
+		</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script>
+		$("button").click(function() {
+		$('html,body').animate({
+			scrollTop: $(".content").offset().top},
+			'slow');
+		});
+	</script>	
 	</body>
 </html>

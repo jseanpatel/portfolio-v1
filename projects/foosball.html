@@ -15,8 +15,10 @@
 					<a href="../about.html">About</a>
 				</div>
 			</nav>
-			<div id="titleName"> Foosball </div>
-			<i class="fas fa-caret-down"> </i>
+			<div id="titleName">  </div>
+			<div>
+				<button type="button"> <i class="fas fa-caret-down"> </i></button>
+			</div>
 		</div>
 		<div class="content">
 			<div id="aboutPanel">
@@ -27,6 +29,14 @@
 				<p> Check it out on GitHub: <a href="https://github.com/jacobseanpatel/FlyRight"> <i class="fab fa-github"></i> </a> 
 			</div>
 			</div>
-		</div>		
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>	
+		<script>
+			$("button").click(function() {
+			$('html,body').animate({
+				scrollTop: $(".content").offset().top},
+				'slow');
+			});
+		</script>	
 	</body>
 </html>

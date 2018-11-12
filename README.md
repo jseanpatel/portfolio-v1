@@ -19,7 +19,7 @@ This website was built to house my personal projects, information, and interests
 
 ## Deployment
 
-This website is static and can be deployed by simply opening index.html. This website can be reached at [jseanpatel.github.io](https://jseanpatel.github.io).
+This website is static and can be deployed by simply opening index.html. This website can be reached at [https://jacobpa.tel](https://jacobpa.tel).
 
 ## License
 
