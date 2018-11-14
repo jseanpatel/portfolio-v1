@@ -37,6 +37,7 @@ body {
 	right: 0;
 	width: 100%;
 	z-index: 2;
+	height: 10vh;
 }
 
 .active {
@@ -75,7 +76,7 @@ body {
 #titleName {
 	opacity: 0.25;
 	font-size: 7rem;
-	font-family: "pinkblue";
+	font-family: "Georgia";
 }
 
 #titleColumns {
@@ -141,6 +142,11 @@ body {
 .footer {
 	height: 25vh;
 	background-color: #66d0e7;
+}
+
+.fa-caret-down {
+	position: absolute;
+	margin-top: 33.33vh;
 }
 
 /* project page and about page styles */
