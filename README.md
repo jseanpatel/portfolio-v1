@@ -25,7 +25,7 @@ This website is static and can be deployed by simply opening index.html. This we
 
  MIT License
 
-Copyright (c) 2018 Jacob Patel
+Copyright (c) 2019 Jacob Patel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
