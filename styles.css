@@ -17,6 +17,10 @@ body {
 	font-family: "righteous" !important;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .landing {
 	overflow: hidden;
 	height: 90vh;
@@ -41,7 +45,7 @@ body {
 }
 
 .active {
-	font-size: 1.25rem;
+	font-size: 1.7rem;
     margin-bottom: 0.5rem;
     border-bottom: 2px solid #000;
     display: inline-block;
@@ -54,7 +58,7 @@ body {
 	float: right;
 	margin-right: 2rem;
 	margin-top: 1.5rem;
-	font-size: 1.15rem;
+	font-size: 1.4rem;
 }
 
 .links a {
@@ -123,20 +127,33 @@ body {
 	background-color: #262C2B;
 }
 
+#maribel {
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-color: #f7f7f7;
+    background-position: top left, top left;
+	background-repeat: repeat-x, repeat;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0)
+}
+
+.landingText {
+	font-size: 5rem;
+	color: white;
+}
+
+.landingText2 {
+	font-size: 3rem;
+	color: white;
+}
+
 #foosball {
 	background-color: #B3B1B6; 
 }
 
-#project4 {
-	background-color: #4c9cb8;
-}
-
-#project5 {
-	background-color: #afe1e3 
-}
-
-#project6 {
-	background-color: #4c9cb8;
+#empty {
+	background-color: #66d0e7;
 }
 
 .footer {
