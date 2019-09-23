@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<title> Jacob Patel </title>
@@ -9,11 +8,11 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;">
 	<nav class="topnav">
 		<div class="links">
 			<a class="active" href="index.html">Home</a>
-			<a href="#projects">Projects</a>
+			<a href="#projects" onclick="location.href='#scroll'">Projects</a>
 			<a href="about.html">About</a>
 		</div>
 	</nav>
@@ -27,7 +26,7 @@
 		</div>
 	</section>
 	<section class="hero">
-		<div class="projects">
+		<div class="projects" id="scroll">
 			<a href="projects/maribel.html" class="project" id="maribel">
 				<div class="hoverproject">
 					<img src="assets/mariellogo.png" class="projectpicture" style="width: 13rem; height: 8rem">
@@ -40,7 +39,7 @@
 			</a>
 			<a href="projects/j2c.html" class="project" id="j2c">
 				<div class="hoverproject">
-					<img src="assets/graduation-cap-solid.svg" class="projectpicture" style="width: 60%">
+					<img src="assets/graduation-cap-solid.svg" class="projectpicture" style="width: 25%">
 				</div>
 			</a>
 		</div>
@@ -62,5 +61,4 @@
 		</div>
 	</section>
 </body>
-
 </html>

@@ -17,6 +17,10 @@ body {
 	font-family: "righteous" !important;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .landing {
 	overflow: hidden;
 	height: 90vh;
