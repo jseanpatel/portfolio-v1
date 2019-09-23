@@ -139,13 +139,13 @@ html {
 }
 
 .landingText {
-	font-size: 5rem;
-	color: white;
+	font-size: 5rem !important;
+	color: white !important;
 }
 
 .landingText2 {
-	font-size: 3rem;
-	color: white;
+	font-size: 3rem !important;
+	color: white !important;
 }
 
 #foosball {
