@@ -123,20 +123,23 @@ body {
 	background-color: #262C2B;
 }
 
+#maribel {
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+    background-color: #f7f7f7;
+    background-position: top left, top left;
+	background-repeat: repeat-x, repeat;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0)
+}
+
 #foosball {
 	background-color: #B3B1B6; 
 }
 
-#project4 {
-	background-color: #4c9cb8;
-}
-
-#project5 {
-	background-color: #afe1e3 
-}
-
-#project6 {
-	background-color: #4c9cb8;
+#empty {
+	background-color: #66d0e7;
 }
 
 .footer {
