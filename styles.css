@@ -1,4 +1,5 @@
 /* styles for portfolio */
+
 /* TODO: split this file into base styles and index.html styles so I can reuse base styles on other pages and reduce load */
 
 @font-face {
@@ -31,13 +32,14 @@ html {
 }
 
 /* nav styles */
+
 /* TODO: redo this in Bulma styling */
 
 .topnav {
 	display: block;
 	position: fixed;
-	top: 0; 
-	left: 0; 
+	top: 0;
+	left: 0;
 	right: 0;
 	width: 100%;
 	z-index: 2;
@@ -46,10 +48,10 @@ html {
 
 .active {
 	font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    padding-bottom: 2px;
+	margin-bottom: 0.5rem;
+	border-bottom: 2px solid #000;
+	display: inline-block;
+	padding-bottom: 2px;
 	color: white;
 	border-color: white;
 }
@@ -98,7 +100,7 @@ html {
 	display: flex;
 	position: relative;
 	height: 25vh;
-	width: 33.33%;	
+	width: 33.33%;
 }
 
 .projectpicture {
@@ -129,27 +131,31 @@ html {
 
 #maribel {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
-    background-color: #f7f7f7;
-    background-position: top left, top left;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(assets/bg01.png);
+	background-color: #f7f7f7;
+	background-position: top left, top left;
 	background-repeat: repeat-x, repeat;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transform: translate3d(0, 0, 0)
 }
 
-.landingText {
-	font-size: 5rem !important;
+
+
+.has-white-text {
 	color: white !important;
 }
 
-.landingText2 {
-	font-size: 3rem !important;
-	color: white !important;
+.has-text-1 {
+	font-size: 6rem !important;
+}
+
+.has-text-2 {
+	font-size: 4.5rem !important;
 }
 
 #foosball {
-	background-color: #B3B1B6; 
+	background-color: #B3B1B6;
 }
 
 #empty {
@@ -167,6 +173,7 @@ html {
 }
 
 /* project page and about page styles */
+
 /* moved all the old styles to content.txt, need to redo pages in Bulma style */
 
 .about_info {
