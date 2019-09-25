@@ -158,8 +158,12 @@ html {
 	background-color: #B3B1B6;
 }
 
+#j2c {
+	background-color: #fdeab7;
+}
+
 #empty {
-	background-color: #66d0e7;
+	background-color: #fff;
 }
 
 .footer {
