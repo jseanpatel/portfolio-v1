@@ -1,6 +1,6 @@
-# Developer Portfolio
+# Developer Portfolio - Old
 
-*Website for my personal developer portfolio.* 
+*Website for my former personal developer portfolio.* 
 
 ## Table of Contents
 - [Description](#description)
