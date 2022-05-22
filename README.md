@@ -1,4 +1,4 @@
-# Developer Portfolio - Old
+# Developer Portfolio - Version One
 
 *Website for my former personal developer portfolio.* 
 
@@ -19,7 +19,8 @@ This website was built to house my personal projects, information, and interests
 
 ## Deployment
 
-This website is no longer live.
+This website can be reached at [https://v1.jseanpa.tel](https://v1.jseanpa.tel).
+
 
 ## License
 
